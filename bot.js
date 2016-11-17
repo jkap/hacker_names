@@ -1,11 +1,16 @@
 var tracery = require('tracery-grammar');
 
 var processedGrammar = tracery.createGrammar(require('./grammar.json'));
+var disallowed = require('./disallowed');
 
 processedGrammar.addModifiers(tracery.baseEngModifiers); 
 
-var tweet = processedGrammar.flatten("#origin#");
-//console.log(tweet);
+var tweet;
+
+do {
+	tweet = processedGrammar.flatten("#origin#");
+console.log(tweet);
+} while (disallowed.indexOf(tweet) > -1)
 
 
 var Twit = require('twit');
@@ -22,7 +27,7 @@ var T = new Twit(
 
 
 T.post('statuses/update', { status: tweet }, function(err, data, response) {
-  //console.log(data)
+//  console.log(data)
 })
 
 

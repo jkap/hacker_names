@@ -3,6 +3,7 @@
 		"#first# #second#"
 	],
 	"first": [
+		"SPACE",
 		"CRASH",
 		"ZERO",
 		"COOL",
@@ -22,6 +23,7 @@
 		"STAFF",
 		"TOXIC",
 		"SECTOR",
+		"MINOR",
 		"INCREDIBLE",
 		"JAGGED",
 		"JAGGED",
