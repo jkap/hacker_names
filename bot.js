@@ -3,12 +3,12 @@ var tracery = require('tracery-grammar');
 var processedGrammar = tracery.createGrammar(require('./grammar.json'));
 var disallowed = require('./disallowed');
 
-processedGrammar.addModifiers(tracery.baseEngModifiers); 
+processedGrammar.addModifiers(tracery.baseEngModifiers);
 
 var tweet;
 
 do {
-	tweet = processedGrammar.flatten("#origin#");
+	tweet = processedGrammar.flatten("#origin#").toUpperCase();
 console.log(tweet);
 } while (disallowed.indexOf(tweet) > -1)
 
@@ -29,6 +29,3 @@ var T = new Twit(
 T.post('statuses/update', { status: tweet }, function(err, data, response) {
 //  console.log(data)
 })
-
-
-
