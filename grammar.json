@@ -2,10 +2,25 @@
 	"origin": [
 		"#name#",
 		"#article# #name#",
-		"#noun#.EXE"
+		"#noun#.#extension#"
 	],
 	"name": [
 		"#adjective# #noun#"
+	],
+	"extension": [
+		"exe",
+		"bin",
+		"zip",
+		"dll",
+		"app",
+		"iso",
+		"rar",
+		"jpg",
+		"gif",
+		"png",
+		"wav",
+		"mp3",
+		"flac"
 	],
 	"article": [
 		"dr",
