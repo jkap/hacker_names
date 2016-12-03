@@ -1,7 +1,8 @@
 {
 	"origin": [
 		"#name#",
-		"#article# #name#"
+		"#article# #name#",
+		"#noun#.EXE"
 	],
 	"name": [
 		"#adjective# #noun#"
@@ -43,6 +44,7 @@
 		"demon",
 		"dog",
 		"dot",
+		"fist",
 		"fiend",
 		"freak",
 		"fuck",
