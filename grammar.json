@@ -2,7 +2,8 @@
 	"origin": [
 		"#name#",
 		"#article# #name#",
-		"#noun#.#extension#"
+		"#noun#.#extension#",
+		"#adjective#_#noun#.#extension#"
 	],
 	"name": [
 		"#adjective# #noun#"
@@ -67,7 +68,6 @@
 		"hack",
 		"hacker",
 		"ice",
-		"infection",
 		"jam",
 		"killer",
 		"knife",
@@ -80,7 +80,6 @@
 		"pain",
 		"phantom",
 		"phreak",
-		"plague",
 		"proxy",
 		"pulse",
 		"razor",
@@ -97,7 +96,6 @@
 		"sword",
 		"tech",
 		"track",
-		"venom",
 		"viper",
 		"volt",
 		"weed",
@@ -117,6 +115,7 @@
 		"delta",
 		"dot",
 		"giga",
+		"hyper",
 		"icy",
 		"incredible",
 		"infected",
