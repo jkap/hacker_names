@@ -1,5 +1,4 @@
 #!/bin/sh
 
-pushd `dirname $0` > /dev/null
+cd `dirname $0`
 git pull
-popd > /dev/null
