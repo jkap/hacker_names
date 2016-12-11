@@ -21,7 +21,8 @@
 		"png",
 		"wav",
 		"mp3",
-		"flac"
+		"flac",
+		"nfo"
 	],
 	"article": [
 		"dr",
