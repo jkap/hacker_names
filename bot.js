@@ -27,7 +27,8 @@ var T = new Twit(
 );
 
 var M = new Mastodon({
-  access_token: process.env.MASTODON_ACCESS_TOKEN
+  access_token: process.env.MASTODON_ACCESS_TOKEN,
+  api_url: 'https://gay.crime.team/api/v1/'
 });
 
 
@@ -37,7 +38,7 @@ T.post('statuses/update', { status: tweet }, function(err, data, response) {
   }
 })
 
-M.post('https://gay.crime.team/api/v1/statuses', { status: tweet }, function (err, data, response) {
+M.post('statuses', { status: tweet }, function (err, data, response) {
   if (err) {
     console.warn(err);
   }
