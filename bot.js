@@ -37,7 +37,7 @@ T.post('statuses/update', { status: tweet }, function(err, data, response) {
   }
 })
 
-M.post('statuses', { status: tweet }, function (err, data, response) {
+M.post('https://gay.crime.team/api/v1/statuses', { status: tweet }, function (err, data, response) {
   if (err) {
     console.warn(err);
   }
