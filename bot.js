@@ -32,7 +32,13 @@ var M = new Mastodon({
 
 
 T.post('statuses/update', { status: tweet }, function(err, data, response) {
-//  console.log(data)
+  if (err) {
+    console.warn(err);
+  }
 })
 
-M.post('statuses', { status: tweet }, function (err, data, response) {});
+M.post('statuses', { status: tweet }, function (err, data, response) {
+  if (err) {
+    console.warn(err);
+  }
+});
