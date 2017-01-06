@@ -8,9 +8,12 @@
   },
   "author": "v21",
   "license": "ISC",
-  "dependencies":
-  {
-  	"twit" : "1.x",
-  	 "tracery-grammar": "2.x"
+  "dependencies": {
+    "mastodon": "^1.0.0",
+    "tracery-grammar": "2.x",
+    "twit": "1.x"
+  },
+  "devDependencies": {
+    "oauth": "^0.9.15"
   }
 }

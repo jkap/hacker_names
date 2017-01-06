@@ -14,6 +14,7 @@ console.log(tweet);
 
 
 var Twit = require('twit');
+var Mastodon = require('mastodon');
 
 
 var T = new Twit(
@@ -25,7 +26,13 @@ var T = new Twit(
 }
 );
 
+var M = new Mastodon({
+  access_token: process.env.MASTODON_ACCESS_TOKEN
+});
+
 
 T.post('statuses/update', { status: tweet }, function(err, data, response) {
 //  console.log(data)
 })
+
+M.post('statuses', { status: tweet }, function (err, data, response) {});
